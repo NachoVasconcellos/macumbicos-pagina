@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Krona One";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+header {
+  background: url(./assets/fondo.jpg);
+  background-size: 100%;
+  height: 134vh;
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+header .logo-y-menu {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+header .boton a,
+.botones a,
+#discografia a {
+  background: yellow;
+  color: #000;
+  padding: 20px 40px;
+  line-height: 50px;
+}
+
+header .titular {
+  margin-top: 30vh;
+  color: #fff;
+}
+
+h1 {
+  font-size: 50px;
+  width: 80%;
+}
+
+.amarillo {
+  color: yellow;
+}
+
+.purpura {
+  color: purple;
+}
+
+.blanco {
+  background: #fff !important;
+}
+
+/*galeria*/
+
+.fotos {
+  background: radial-gradient(circle, purple 0%, yellow 110%);
+  font-size: 3rem;
+  font-family: "Jost";
+}
+
+.grid-container img {
+  object-fit: cover;
+  width: 250px;
+  height: 200px;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: purple;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: 200px;
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+  justify-content: space-around;
+}
+
+/*discografia*/
+
+#discografia {
+  background: #000;
+  color: #fff;
+  padding: 60px 0;
+}
+
+h4 {
+  margin: 0;
+  color: yellow;
+  border: 1px solid #ccc;
+  width: 120px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#discografia .contenedor {
+  display: flex;
+  align-items: center;
+}
+
+#discografia span {
+  color: yellow;
+  text-decoration: underline;
+}
+
+#discografia h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#discografia p {
+  font-size: 13px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+#discografia img {
+  width: 100%;
+}
+
+#discografia .texto {
+  width: 50%;
+}
+
+#discografia .foto {
+  width: 40%;
+}
+
+.contenedor-textos {
+  display: flex;
+}
+
+/*About*/
+
+#about h4 {
+  color: #000;
+  border: 1px solid purple;
+  text-align: center;
+}
+
+#about p,
+#tour p {
+  font-family: "Jost";
+  font-size: 20px;
+}
+
+.negro {
+  background: purple !important;
+}
+
+#about {
+  padding: 100px 0;
+}
+
+/*fechas*/
+
+#tour {
+  background: yellow;
+  padding: 60px 0;
+}
+
+#tour .contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+
+#tour img {
+  width: 100%;
+}
+
+#tour .texto {
+  width: 50%;
+}
+
+#tour .imagen {
+  width: 20%;
+  position: relative;
+  top: -100px;
+}
+
+#tour h4 {
+  color: #000;
+  text-align: center;
+}
+
+.fechas {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  margin: auto;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #cccccc57;
+  padding-bottom: 30px;
+}
+
+.fechas .numero {
+  font-size: 34px;
+}
+
+.fechas h5,
+.fechas p {
+  margin: 0;
+}
+
+.fechas h5 {
+  font-size: 20px;
+}
+
+.fechas a {
+  background: #fff;
+  color: #000;
+  padding: 15px 30px;
+}
+
+/*footer*/
+
+footer {
+  text-align: center;
+  padding: 60px 0;
+}
+
+footer svg {
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+}
+
+.copyright {
+  font-size: 12px;
+  margin-bottom: -40px;
+}
+
+.menu-logo {
+  display: none;
+}
+
+/*Mediaquery*/
+
+@media (max-width: 800px) {
+  header .menu {
+    flex-direction: column;
+  }
+
+  .menu-logo {
+    display: block;
+    cursor: pointer;
+  }
+
+  header {
+    background-size: 400%;
+    height: 134vh;
+  }
+
+  header .logo-y-menu {
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav {
+    background: yellow;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    display: none;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+
+  nav ul li {
+    margin-bottom: 20px;
+  }
+
+  .boton {
+    margin-top: 230px;
+    display: none;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  header .titular {
+    margin-top: 19vh;
+  }
+
+  h2 {
+    font-size: 27px !important;
+  }
+
+  .grid-container {
+    padding: 60px;
+  }
+
+  #discografia .contenedor {
+    flex-direction: column;
+  }
+
+  #discografia .texto {
+    width: 100%;
+  }
+
+  #discografia .foto {
+    width: 82%;
+    margin-top: 25px;
+  }
+
+  .imagen {
+    width: 100%;
+    height: 50%;
+  }
+
+  .contenedor-textos {
+    flex-direction: column;
+  }
+
+  header .boton a,
+  .botones a,
+  #discografia a {
+    background: yellow;
+    color: #000;
+    padding: 14px 19px;
+    line-height: 50px;
+    font-size: 13px;
+  }
+
+  #tour .contenedor {
+    flex-direction: column;
+  }
+
+  #tour .imagen {
+    width: 65%;
+    position: relative;
+    top: -27;
+  }
+
+  #tour .texto {
+    width: 100%;
+  }
+
+  .fechas {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .fechas div {
+    margin-bottom: 10px;
+  }
+}
