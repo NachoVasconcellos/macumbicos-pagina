@@ -293,6 +293,7 @@ footer svg {
   .menu-logo {
     display: block;
     cursor: pointer;
+    width: 38px;
   }
 
   header {
@@ -375,7 +376,7 @@ footer svg {
     color: #000;
     padding: 14px 19px;
     line-height: 50px;
-    font-size: 13px;
+    font-size: 20px;
   }
 
   #tour .contenedor {
