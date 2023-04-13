@@ -291,9 +291,11 @@ footer svg {
   }
 
   .menu-logo {
+    position: fixed;
     display: block;
     cursor: pointer;
     width: 38px;
+    left: 300px;
   }
 
   header {
